@@ -1,3 +1,4 @@
+import typer
 
 from ssg.site import Site
 
@@ -6,5 +7,4 @@ def main(source="content", dest = "dist"):
 
     Site(**config).build()
 
-if __name__ == "__main__":
-    main()
+typer.run(main)
