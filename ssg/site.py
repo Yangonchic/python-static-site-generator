@@ -22,7 +22,7 @@ class Site:
         if parser is not None:
             parser.parse(path, self.source, self.dest)
         else:
-            print(f"Not implemented")
+            print("Not implemented")
 
     def build(self):
         self.dest.mkdir(parents=True, exist_ok=True)
